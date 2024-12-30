@@ -2,7 +2,7 @@ import type { Metadata } from "next"
 import { Geist, Geist_Mono } from "next/font/google"
 import "reset-css"
 import "./globals.css"
-
+import ClientThemeProvider from "./theme"
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -16,7 +16,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "MY SCHEDULE",
-  description: "Next JSで作成されたスケジュールアプリケーションです",
+  description: "Next JSで作成されたスケジュールアプリケーションです"
 }
 
 export default function RootLayout({
@@ -26,7 +26,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ja">
-      <body className={`${geistSans.variable} ${geistMono.variable}`}>{children}</body>
+      <body className={`${geistSans.variable} ${geistMono.variable}`}>
+        <ClientThemeProvider>{children}</ClientThemeProvider>
+      </body>
     </html>
   )
 }
