@@ -1,11 +1,11 @@
-"use client"
-import { MenuItemType } from "@/app/types/formItem"
-import { MenuItem, Select, SelectProps } from "@mui/material"
-import { FC } from "react"
+"use client";
+import { MenuItemType } from "@/app/types/formItem";
+import { MenuItem, Select, SelectProps } from "@mui/material";
+import { FC } from "react";
 
 type Props = {
-  menuItemList: MenuItemType[]
-} & SelectProps
+  menuItemList: MenuItemType[];
+} & SelectProps;
 
 const CSelectBox: FC<Props> = ({ value, onChange, label, menuItemList, ...other }) => {
   return (
@@ -16,7 +16,7 @@ const CSelectBox: FC<Props> = ({ value, onChange, label, menuItemList, ...other 
         </MenuItem>
       ))}
     </Select>
-  )
-}
+  );
+};
 
-export default CSelectBox
+export default CSelectBox;

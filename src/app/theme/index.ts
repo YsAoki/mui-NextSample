@@ -1,19 +1,19 @@
-import { createTheme } from "@mui/material/styles"
+import { createTheme } from "@mui/material/styles";
 
 declare module "@mui/material/styles" {
   interface Theme {
     customShadows: {
-      small: string
-      medium: string
-      large: string
-    }
+      small: string;
+      medium: string;
+      large: string;
+    };
   }
   interface ThemeOptions {
     customShadows?: {
-      small?: string
-      medium?: string
-      large?: string
-    }
+      small?: string;
+      medium?: string;
+      large?: string;
+    };
   }
 }
 
@@ -71,4 +71,4 @@ export const theme = createTheme({
     medium: "0px 3px 6px rgba(0, 0, 0, 0.16)", // 中程度の影
     large: "0px 10px 20px rgba(0, 0, 0, 0.15)" // 大きな影
   }
-})
+});

@@ -7,8 +7,8 @@ module.exports = {
   singleQuote: false,
   // 末尾のカンマを付けない
   trailingComma: "none",
-  // セミコロンを付けない
-  semi: false,
+  // セミコロンを付ける
+  semi: true,
   // パーサーの指定
   parser: "typescript",
   // JSX の閉じタグを同じ行に配置

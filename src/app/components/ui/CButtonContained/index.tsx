@@ -1,9 +1,9 @@
-"use client"
+"use client";
 
-import { Button, ButtonProps } from "@mui/material"
-import { FC } from "react"
+import { Button, ButtonProps } from "@mui/material";
+import { FC } from "react";
 
-type Props = ButtonProps
+type Props = ButtonProps;
 
 /**背景色が塗りつぶされているボタン */
 const CButtonContained: FC<Props> = ({ children, ...other }) => {
@@ -11,7 +11,7 @@ const CButtonContained: FC<Props> = ({ children, ...other }) => {
     <Button variant="contained" {...other}>
       {children}
     </Button>
-  )
-}
+  );
+};
 
-export default CButtonContained
+export default CButtonContained;
