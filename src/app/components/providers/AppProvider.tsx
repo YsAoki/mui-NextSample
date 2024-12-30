@@ -5,7 +5,7 @@ import { LocalizationProvider } from "@mui/x-date-pickers"
 import { AdapterDayjs } from "@mui/x-date-pickers/AdapterDayjs"
 import "dayjs/locale/de"
 import { FC, PropsWithChildren } from "react"
-import { theme } from "../../theme/themePalette"
+import { theme } from "../../theme"
 
 type Props = PropsWithChildren
 
