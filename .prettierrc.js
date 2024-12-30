@@ -12,7 +12,7 @@ module.exports = {
   // パーサーの指定
   parser: "typescript",
   // JSX の閉じタグを同じ行に配置
-  jsxBracketSameLine: false,
+  bracketSameLine: false,
   // プラグインの追加
   plugins: ["prettier-plugin-organize-imports"]
 }
